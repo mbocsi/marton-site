@@ -1,10 +1,11 @@
-import { Text } from '@chakra-ui/react';
+import { Heading, Text } from '@chakra-ui/react';
 import './hobbies.css'
 
 function Hobbies() {
     return (
         <div className='Hobbies-page'>
-            <Text>Hobbies</Text>
+            <Heading style={{padding: '5%'}}>Hobbies</Heading>
+            <Text>WIP!</Text>
         </div>
     )
 }

@@ -1,4 +1,6 @@
 .Projects-page {
     background-color: cadetblue;
     min-height: 100vh;
+    text-align: center;
+    align-items: center;
 }

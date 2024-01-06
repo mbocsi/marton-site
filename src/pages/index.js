@@ -36,7 +36,7 @@ function Home() {
       </div>
       <div className="About">
           <Heading color='white' style={{padding: '3%'}}> About me! </Heading>
-          <Text fontSize='xl' color='white'> Some text describing a bit about me.</Text>
+          <Text fontSize='xl' color='white'> Placeholder text describing me. The website is a work in progress!</Text>
           <div className="Tiles">
             <Link to='/hobbies'>
                 <Box className='hobby' boxShadow='dark-lg' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }} color='black' bg='white' borderRadius='lg' p={3}>

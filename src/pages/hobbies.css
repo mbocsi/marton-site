@@ -1,4 +1,6 @@
 .Hobbies-page {
     background-color: azure;
     min-height: 100vh;
+    text-align: center;
+    align-items: center;
 }
