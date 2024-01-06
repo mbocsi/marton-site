@@ -8,10 +8,12 @@ import Home from "./pages";
 import Hobbies from "./pages/hobbies";
 import Experience from "./pages/experience";
 import Projects from "./pages/projects";
+import Navbar from "./components/navbar";
  
 function App() {
     return (
         <Router>
+            <Navbar></Navbar>
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route path="/hobbies" element={<Hobbies />} />
