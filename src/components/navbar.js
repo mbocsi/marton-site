@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-    const { onCopy, value, setValue, hasCopied } = useClipboard("mvbocsi@gmail.com");
+    const { onCopy } = useClipboard("mvbocsi@gmail.com");
     return (
         <div className='navbar'>
             <Link className='navitem' to='/'>
