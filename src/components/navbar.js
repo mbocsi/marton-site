@@ -1,5 +1,5 @@
 import './navbar.css';
-import { Button, Icon, Box, useClipboard } from '@chakra-ui/react';
+import { Button, Icon, Box, useClipboard, Link as ChakraLink, HStack, Text } from '@chakra-ui/react';
 import { EmailIcon } from '@chakra-ui/icons';
 import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -10,36 +10,45 @@ function Navbar() {
     return (
         <div className='navbar'>
             <Link className='navitem' to='/'>
-                <Box borderRadius={0} bg={false} color='white' as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>Home</Box>
+                <Box className='navbox' borderRadius={0} bg={false} color='white' as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>
+                    <Text>Home</Text>
+                </Box>
             </Link>
             <Link className='navitem' to='/hobbies'>
-                <Box borderRadius={0} bg={false} color='white' as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>Hobbies</Box>
+                <Box className='navbox' borderRadius={0} bg={false} color='white' as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>
+                    <Text>Hobbies</Text>
+                </Box>
             </Link>
             <Link className='navitem' to='/experience'>
-                <Box borderRadius={0} bg={false} color='white' as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>Experience</Box>
+                <Box className='navbox' borderRadius={0} bg={false} color='white' as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>
+                    <Text>Experience</Text>
+                </Box>
             </Link>
             <Link className='navitem' to='/projects'>
-                <Box borderRadius={0} bg={false} color='white' as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>Projects</Box>
+                <Box className='navbox' borderRadius={0} bg={false} color='white' as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>
+                    <Text>Projects</Text>
+                </Box>
             </Link>
-            
-            <Button className='socialitem' colorScheme='instagram' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }}>
-                <Link to='https://www.facebook.com/marton.bocsi'>
-                    <Icon boxSize={8} as={FaFacebook}></Icon>
-                </Link>
-            </Button>
-            <Button colorScheme='instagram' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }}>
-                <Link to='https://www.instagram.com/martonbocsi/'>
-                    <Icon boxSize={8} as={FaInstagram}></Icon>
-                </Link>
-            </Button>
-            <Button onClick={onCopy} colorScheme='instagram' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }}>
-                <Icon boxSize={8} as={EmailIcon}></Icon>
-            </Button>
-            <Button colorScheme='instagram' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }}>
-                <Link to='https://github.com/mbocsi'>
-                    <Icon boxSize={8} as={FaGithub}></Icon>
-                </Link>
-            </Button>
+            <HStack className='socials' spacing='24px'>
+                <Box onClick={onCopy} colorScheme='instagram' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }}>
+                    <Icon boxSize={8} as={EmailIcon}></Icon>
+                </Box>
+                <ChakraLink href='https://www.facebook.com/marton.bocsi'>
+                    <Box className='social-link' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }}>
+                        <Icon boxSize={8} as={FaFacebook}></Icon>
+                    </Box>
+                </ChakraLink>
+                <ChakraLink href='https://www.instagram.com/martonbocsi/'>
+                    <Box className='social-link' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }}>
+                        <Icon boxSize={8} as={FaInstagram}></Icon>
+                    </Box>
+                </ChakraLink>
+                <ChakraLink href='https://github.com/mbocsi'>
+                    <Box className='social-link' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }}>
+                        <Icon boxSize={8} as={FaGithub}></Icon>
+                    </Box>
+                </ChakraLink>
+            </HStack>
         </div>
     )
 }
