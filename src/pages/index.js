@@ -2,7 +2,7 @@ import './index.css';
 import { Text, Heading, Box, Image, extendTheme, ChakraProvider } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const colors = {
   900: '#1a365d',
@@ -13,7 +13,6 @@ const colors = {
 const theme = extendTheme({ colors })
 
 function Home() {
-  let navigate = useNavigate();
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
   // const [c, setC] = useState(0);
