@@ -1,5 +1,5 @@
 import './navbar.css';
-import { Button, Icon, Box, useClipboard, Link as ChakraLink, HStack, Text } from '@chakra-ui/react';
+import { Icon, Box, useClipboard, Link as ChakraLink, HStack, Text } from '@chakra-ui/react';
 import { EmailIcon } from '@chakra-ui/icons';
 import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
