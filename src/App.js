@@ -15,16 +15,17 @@ function App() {
         <Router>
             <Navbar></Navbar>
             <Routes>
-                <Route exact path="/" element={<Home />} />
+                <Route index element={<Home />} />
+                <Route path="/~marton" element={<Home />} />
+
                 <Route path="/hobbies" element={<Hobbies />} />
-                <Route
-                    path="/experience"
-                    element={<Experience />}
-                />
-                <Route
-                    path="/projects"
-                    element={<Projects />}
-                />
+                <Route path="/~marton/hobbies" element={<Hobbies />} />
+
+                <Route path="/experience" element={<Experience />} />
+                <Route path="/~marton/experience" element={<Experience />} />
+
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/~marton/projects" element={<Projects />} />
             </Routes>
         </Router>
     );
