@@ -3,33 +3,32 @@ import { Icon, Box, useClipboard, Link as ChakraLink, HStack, Text, Container } 
 import { EmailIcon } from '@chakra-ui/icons';
 import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 function Navbar() {
     const { onCopy } = useClipboard("mvbocsi@gmail.com");
     return (
         <Container className='navbar' bg='200' color='800' maxWidth='100%' boxShadow='lg'>
             <HStack spacing='24px'>
-                <Link className='navitem' to='/'>
+                <Container className='navitem' to='/'>
                     <Box className='navbox' borderRadius={0} bg={false} as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>
                         <Text>Home</Text>
                     </Box>
-                </Link>
-                <Link className='navitem' to='/hobbies'>
+                </Container>
+                <Container className='navitem' to='/hobbies'>
                     <Box className='navbox' borderRadius={0} bg={false} as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>
                         <Text>Hobbies</Text>
                     </Box>
-                </Link>
-                <Link className='navitem' to='/experience'>
+                </Container>
+                <Container className='navitem' to='/experience'>
                     <Box className='navbox' borderRadius={0} bg={false} as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>
                         <Text>Experience</Text>
                     </Box>
-                </Link>
-                <Link className='navitem' to='/projects'>
+                </Container>
+                <Container className='navitem' to='/projects'>
                     <Box className='navbox' borderRadius={0} bg={false} as={motion.div} whileHover={{ scale: 1.1}} whileTap={{ scale: 1 }}>
-                        <Text>Projects</Text>
+                        <Text>About me</Text>
                     </Box>
-                </Link>
+                </Container>
             </HStack>
             <HStack className='socials' spacing='24px'>
                 <Box onClick={onCopy} colorScheme='instagram' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }}>

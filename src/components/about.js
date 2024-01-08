@@ -1,32 +1,12 @@
-import './index.css';
-import { Text, Heading, Box, Image, Container } from '@chakra-ui/react';
+import { Container, Heading, Text, Box, Image } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
-function Home() {
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
-
-  return (
-      <>
-        <Container bg='50' textAlign={['center']} minHeight={'100vh'} justifyContent={'center'} alignItems={'center'} display='flex' flexDirection={'column'} maxWidth='100%' margin={0}>
-          <Heading size='4xl'>Marton Vince Bocsi</Heading>
-          <Text>Am I cool?</Text>
-          <div className="Options">
-            <Box className="Choice" as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }} bg='blue' color='white' p={4} borderRadius='lg' overflow='hidden'>
-              Yes!
-            </Box>
-            <Box className="Choice" onHoverStart={() => {setX(Math.random() * 1000 - 500); setY(Math.random() * 800 - 400);}} as={motion.div} animate={{x, y}} bg='tomato' color='white' p={4} borderRadius='lg' overflow='hidden'>
-              No!
-            </Box>
-          </div>
-        </Container>
+function About() {
+    return (
         <Container bg='600' textAlign={'center'} maxWidth='100%'>
           <Heading color='white' style={{padding: '3%'}}> About me! </Heading>
           <Text fontSize='xl' color='white'> Placeholder text describing me. The website is a work in progress!</Text>
           <div className="Tiles">
-            <Link to='/hobbies'>
                 <Box className='hobby' boxShadow='dark-lg' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }} color='black' bg='white' borderRadius='lg' p={3}>
                 <Heading className="Tile-header">
                     Hobbies
@@ -36,8 +16,6 @@ function Home() {
                     <Image src={'https://hips.hearstapps.com/autoweek/assets/s3fs-public/f1-abu-dhabi-gp-2017-f1-logo.jpg'} alt={'f1'} />
                 </Box>
                 </Box>
-            </Link>
-            <Link to='/experience'>
             <Box className='experience' boxShadow='dark-lg' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }} color='black' bg='white' borderRadius='lg' p={3}>
               <Heading>
                 Experience
@@ -49,8 +27,6 @@ function Home() {
                 <Image src={'https://piercemfg.csod.com/client/piercemfg/clp/01/images/2cTagWh.jpg'}></Image>
               </Box>
             </Box>
-            </Link>
-            <Link to='/projects'>
             <Box className='projects' boxShadow='dark-lg' as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }} color='black' bg='white' borderRadius='lg' p={3}>
               <Heading>
                 Projects
@@ -62,11 +38,9 @@ function Home() {
                 <Image src={'https://img.freepik.com/premium-vector/blue-tube-vector-logo-template-illustration-design-vector-eps-10_822766-9547.jpg'}></Image>
               </Box>
             </Box>
-            </Link>
           </div>
       </Container>
-    </>
-  );
+    );
 }
 
-export default Home;
+export default About;
