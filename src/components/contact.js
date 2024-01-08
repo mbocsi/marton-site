@@ -1,4 +1,4 @@
-import { Container, Text, Heading } from "@chakra-ui/react";
+import { Container, Heading } from "@chakra-ui/react";
 import "./contact.css"
 
 function Contact() {

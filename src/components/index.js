@@ -9,8 +9,9 @@ function Home() {
 
   return (
       <>
-        <Container bg='50' textAlign={['center']} minHeight={'100vh'} justifyContent={'center'} alignItems={'center'} display='flex' flexDirection={'column'} maxWidth='100%' margin={0}>
-          <Heading size='4xl'>Marton Vince Bocsi</Heading>
+        <Container bg='100' textAlign={['center']} minHeight={'100vh'} justifyContent={'center'} alignItems={'center'} display='flex' flexDirection={'column'} maxWidth='100%' margin={0}>
+          <Heading size='4xl'>Marton Bocsi</Heading>
+          {/*
           <Text>Am I cool?</Text>
           <div className="Options">
             <Box className="Choice" as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }} bg='blue' color='white' p={4} borderRadius='lg' overflow='hidden'>
@@ -20,6 +21,7 @@ function Home() {
               No!
             </Box>
           </div>
+  */}
         </Container>
     </>
   );
