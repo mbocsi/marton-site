@@ -8,7 +8,6 @@ import {
   Text,
   Container,
   useToast,
-  Button,
 } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";

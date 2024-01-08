@@ -1,5 +1,5 @@
 import "./index.css";
-import { Text, Heading, Box, Container } from "@chakra-ui/react";
+import { Heading, Container } from "@chakra-ui/react";
 // import { motion } from 'framer-motion';
 // import { useState } from 'react';
 
