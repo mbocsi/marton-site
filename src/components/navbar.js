@@ -8,12 +8,13 @@ import {
   Text,
   Container,
   useToast,
+  Button,
 } from "@chakra-ui/react";
 import { EmailIcon } from "@chakra-ui/icons";
 import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-function Navbar() {
+function Navbar({ experienceRef, aboutRef, contactRef }) {
   const { onCopy } = useClipboard("mvbocsi@gmail.com");
   const toast = useToast();
 
@@ -44,6 +45,9 @@ function Navbar() {
             borderRadius={0}
             bg={false}
             as={motion.div}
+            onClick={() =>
+              experienceRef.current.scrollIntoView({ behavior: "smooth" })
+            }
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
           >
@@ -55,6 +59,9 @@ function Navbar() {
             className="navbox"
             borderRadius={0}
             bg={false}
+            onClick={() =>
+              aboutRef.current.scrollIntoView({ behavior: "smooth" })
+            }
             as={motion.div}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}
@@ -67,6 +74,9 @@ function Navbar() {
             className="navbox"
             borderRadius={0}
             bg={false}
+            onClick={() =>
+              contactRef.current.scrollIntoView({ behavior: "smooth" })
+            }
             as={motion.div}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 1 }}

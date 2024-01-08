@@ -14,10 +14,11 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import "./experience.css";
+import { forwardRef } from "react";
 
-function Experience() {
+const Experience = forwardRef((props, ref) => {
   return (
-    <Container className="Experience-page" maxW="100%" bg="50">
+    <Container className="Experience-page" maxW="100%" bg="50" ref={ref}>
       <Container minWidth="65%">
         <VStack spacing={4} divider={<StackDivider borderColor="500" />}>
           <Heading paddingBottom="5%">Experience</Heading>
@@ -32,7 +33,7 @@ function Experience() {
                 <Box
                   bg="white"
                   borderRadius={10}
-                  padding="1%"
+                  padding="5%"
                   aspectRatio="1/1"
                   display="flex"
                   as={motion.div}
@@ -75,7 +76,7 @@ function Experience() {
                 <Box
                   bg="white"
                   borderRadius={10}
-                  padding="1%"
+                  padding="5%"
                   aspectRatio="1/1"
                   display="flex"
                   as={motion.div}
@@ -115,7 +116,7 @@ function Experience() {
                 <Box
                   bg="white"
                   borderRadius={10}
-                  padding="1%"
+                  padding="5%"
                   aspectRatio="1/1"
                   display="flex"
                   as={motion.div}
@@ -153,7 +154,7 @@ function Experience() {
                 <Box
                   bg="white"
                   borderRadius={10}
-                  padding="1%"
+                  padding="5%"
                   aspectRatio="1/1"
                   display="flex"
                   as={motion.div}
@@ -185,10 +186,46 @@ function Experience() {
               </Container>
             </GridItem>
           </Grid>
+          <Grid gap={6} templateColumns="15% 85%">
+            <GridItem>
+              <ChakraLink href="https://engineering.wisc.edu/">
+                <Box
+                  bg="white"
+                  borderRadius={10}
+                  padding="5%"
+                  aspectRatio="1/1"
+                  display="flex"
+                  as={motion.div}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 1 }}
+                >
+                  <Image
+                    objectFit="contain"
+                    src={
+                      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Wisconsin_Badgers_logo.svg/2171px-Wisconsin_Badgers_logo.svg.png"
+                    }
+                  ></Image>
+                </Box>
+              </ChakraLink>
+            </GridItem>
+            <GridItem>
+              <Container textAlign="left" margin={0} minWidth="100%">
+                <Heading>UW Madison College of Engineering</Heading>
+                <Text color="500">
+                  Computer Engineering & Computer Science BS., September 2021 -
+                  May 2025
+                </Text>
+                <Text as="b">Madison, WI USA</Text>
+                <Stack spacing={3} marginTop={3}>
+                  <Text>...</Text>
+                </Stack>
+              </Container>
+            </GridItem>
+          </Grid>
         </VStack>
       </Container>
     </Container>
   );
-}
+});
 
 export default Experience;

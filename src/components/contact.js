@@ -1,12 +1,13 @@
 import { Container, Heading } from "@chakra-ui/react";
 import "./contact.css";
+import { forwardRef } from "react";
 
-function Contact() {
+const Contact = forwardRef((props, ref) => {
   return (
-    <Container className="contact">
+    <Container className="contact" ref={ref}>
       <Heading> Contact me!</Heading>
     </Container>
   );
-}
+});
 
 export default Contact;

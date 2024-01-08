@@ -1,9 +1,10 @@
 import { Container, Heading, Text, Box, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { forwardRef } from "react";
 
-function About() {
+const About = forwardRef((props, ref) => {
   return (
-    <Container bg="600" textAlign={"center"} maxWidth="100%">
+    <Container bg="600" textAlign="center" maxWidth="100%" ref={ref}>
       <Heading color="white" style={{ padding: "3%" }}>
         About me
       </Heading>
@@ -108,6 +109,6 @@ function About() {
       </div>
     </Container>
   );
-}
+});
 
 export default About;
