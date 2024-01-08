@@ -1,28 +1,18 @@
 import './index.css';
-import { Text, Heading, Box, Image, extendTheme, ChakraProvider } from '@chakra-ui/react';
+import { Text, Heading, Box, Image, Container } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const colors = {
-  900: '#1a365d',
-  800: '#153e75',
-  700: '#2a69ac'
-}
-
-const theme = extendTheme({ colors })
-
 function Home() {
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
-  // const [c, setC] = useState(0);
 
   return (
-    <ChakraProvider theme={theme}>
-      <div className="App">
-        <header className="App-header">
+      <>
+        <Container bg='50' textAlign={['center']} minHeight={'100vh'} justifyContent={'center'} alignItems={'center'} display='flex' flexDirection={'column'} maxWidth='100%' margin={0}>
           <Heading size='4xl'>Marton Vince Bocsi</Heading>
-          <p>Am I cool?</p>
+          <Text>Am I cool?</Text>
           <div className="Options">
             <Box className="Choice" as={motion.div} whileHover={{ scale: 1.2}} whileTap={{ scale: 1.1 }} bg='blue' color='white' p={4} borderRadius='lg' overflow='hidden'>
               Yes!
@@ -31,9 +21,8 @@ function Home() {
               No!
             </Box>
           </div>
-        </header>
-      </div>
-      <div className="About">
+        </Container>
+        <Container bg='600' textAlign={'center'} maxWidth='100%'>
           <Heading color='white' style={{padding: '3%'}}> About me! </Heading>
           <Text fontSize='xl' color='white'> Placeholder text describing me. The website is a work in progress!</Text>
           <div className="Tiles">
@@ -75,8 +64,8 @@ function Home() {
             </Box>
             </Link>
           </div>
-      </div>
-    </ChakraProvider>
+      </Container>
+    </>
   );
 }
 
