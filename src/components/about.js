@@ -5,11 +5,9 @@ function About() {
   return (
     <Container bg="600" textAlign={"center"} maxWidth="100%">
       <Heading color="white" style={{ padding: "3%" }}>
-        {" "}
-        About me!{" "}
+        About me
       </Heading>
       <Text fontSize="xl" color="white">
-        {" "}
         Placeholder text describing me. The website is a work in progress!
       </Text>
       <div className="Tiles">

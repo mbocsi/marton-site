@@ -3,6 +3,7 @@ import {
   Heading,
   Container,
   VStack,
+  Stack,
   StackDivider,
   Box,
   Image,
@@ -20,9 +21,10 @@ function Experience() {
       <Container minWidth="65%">
         <VStack spacing={4} divider={<StackDivider borderColor="500" />}>
           <Heading paddingBottom="5%">Experience</Heading>
-          <Text>
+          <Text as="b">
             I am a computer engineering and CS undergrad at UW Madison's College
-            of Engineering.
+            of Engineering, dedicated to advancing my knowledge and skills in
+            the dynamic field of technology.
           </Text>
           <Grid gap={6} templateColumns="15% 85%">
             <GridItem>
@@ -49,13 +51,21 @@ function Experience() {
               </ChakraLink>
             </GridItem>
             <GridItem>
-              <Container textAlign="left" margin={0}>
+              <Container textAlign="left" margin={0} minWidth="100%">
                 <Heading>Orbit NTNU</Heading>
                 <Text color="500">
                   Dev Ops Engineer, August 2023 - December 2023
                 </Text>
                 <Text as="b">Trondheim, Norway</Text>
-                <Text marginTop={5}>...</Text>
+                <Stack spacing={3} marginTop={3}>
+                  <Text>
+                    During the fall of 2023, I attended the Norwegian University
+                    of Technology (NTNU) in Trondheim, where I had the
+                    opportunity to engage with numerous impressive
+                    technology-focused student organizations, including Orbit.
+                  </Text>
+                  <Text>...</Text>
+                </Stack>
               </Container>
             </GridItem>
           </Grid>
@@ -82,13 +92,20 @@ function Experience() {
               </ChakraLink>
             </GridItem>
             <GridItem>
-              <Container textAlign="left" margin={0}>
+              <Container textAlign="left" margin={0} minWidth="100%">
                 <Heading>Pierce Manufacturing</Heading>
                 <Text color="500">
                   Software Engineering Intern, May 2023 - August 2023
                 </Text>
                 <Text as="b">Oshkosh, WI USA</Text>
-                <Text marginTop={5}>...</Text>
+                <Stack spacing={3} marginTop={3}>
+                  <Text>
+                    With a little bit of experience under my belt, I decided to
+                    expand the scope of my career prospects and explored the
+                    vehicle manufacturing industry.
+                  </Text>
+                  <Text>...</Text>
+                </Stack>
               </Container>
             </GridItem>
           </Grid>
@@ -115,11 +132,18 @@ function Experience() {
               </ChakraLink>
             </GridItem>
             <GridItem>
-              <Container textAlign="left" margin={0}>
+              <Container textAlign="left" margin={0} minWidth="100%">
                 <Heading>SSEC</Heading>
                 <Text color="500">Student Programmer, May 2022 - May 2023</Text>
                 <Text as="b">Madison, WI USA</Text>
-                <Text marginTop={5}>...</Text>
+                <Stack spacing={3} marginTop={3}>
+                  <Text>
+                    My internship at the Space Science and Engineering Center
+                    was my first real look at software development and IT in a
+                    professional setting.
+                  </Text>
+                  <Text>...</Text>
+                </Stack>
               </Container>
             </GridItem>
           </Grid>
@@ -144,13 +168,20 @@ function Experience() {
               </ChakraLink>
             </GridItem>
             <GridItem>
-              <Container textAlign="left" margin={0}>
+              <Container textAlign="left" margin={0} minWidth="100%">
                 <Heading>Badger Solar Racing UW</Heading>
                 <Text color="500">
-                  Low Voltage Team Member, September 2021 - September 2022
+                  Low Voltage Team Member, September 2021 - May 2022
                 </Text>
                 <Text as="b">Madison, WI USA</Text>
-                <Text marginTop={5}>...</Text>
+                <Stack spacing={3} marginTop={3}>
+                  <Text>
+                    Badger Solar Racing (Badgerloop at the time) was the first
+                    step in my computer engineering journey at University of
+                    Wisconsin.
+                  </Text>
+                  <Text>...</Text>
+                </Stack>
               </Container>
             </GridItem>
           </Grid>
