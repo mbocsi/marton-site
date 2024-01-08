@@ -24,7 +24,7 @@ function Experience() {
                             <Heading>Orbit NTNU</Heading>
                             <Text color='500'>Dev Ops Engineer, August 2023 - December 2023</Text>
                             <Text as='b'>Trondheim, Norway</Text>
-                            <Text marginTop={5}>Description</Text>
+                            <Text marginTop={5}>...</Text>
                         </Container>
                     </GridItem>
                 </Grid>
@@ -41,7 +41,7 @@ function Experience() {
                             <Heading>Pierce Manufacturing</Heading>
                             <Text color='500'>Software Engineering Intern, May 2023 - August 2023</Text>
                             <Text as='b'>Oshkosh, WI USA</Text>
-                            <Text marginTop={5}>Description</Text>
+                            <Text marginTop={5}>...</Text>
                         </Container>
                     </GridItem>
                 </Grid>
@@ -58,7 +58,7 @@ function Experience() {
                             <Heading>SSEC</Heading>
                             <Text color='500'>Student Programmer, May 2022 - May 2023</Text>
                             <Text as='b'>Madison, WI USA</Text>
-                            <Text marginTop={5}>Description</Text>
+                            <Text marginTop={5}>...</Text>
                         </Container>
                     </GridItem>
                 </Grid>
@@ -75,7 +75,7 @@ function Experience() {
                             <Heading>Badger Solar Racing UW</Heading>
                             <Text color='500'>Low Voltage Team Member, September 2021 - September 2022</Text>
                             <Text as='b'>Madison, WI USA</Text>
-                            <Text marginTop={5}>Description</Text>
+                            <Text marginTop={5}>...</Text>
                         </Container>
                     </GridItem>
                 </Grid>
