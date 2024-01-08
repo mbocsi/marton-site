@@ -2,9 +2,7 @@
     height: 6vh;
     position: fixed;
     top: 0;
-    background-color: rgb(32, 32, 32);
     width: 100%;
-    color: white;
     display: inline-flex;
     align-items: center;
 }
@@ -15,6 +13,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    white-space: nowrap;
 }
 
 .navbox {
