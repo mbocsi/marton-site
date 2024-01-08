@@ -4,8 +4,14 @@ import { forwardRef } from "react";
 
 const About = forwardRef((props, ref) => {
   return (
-    <Container bg="600" textAlign="center" maxWidth="100%" ref={ref}>
-      <Heading color="white" style={{ padding: "3%" }}>
+    <Container
+      bg="600"
+      padding="5%"
+      textAlign="center"
+      maxWidth="100%"
+      ref={ref}
+    >
+      <Heading color="white" paddingBottom="5%">
         About me
       </Heading>
       <Text fontSize="xl" color="white">
@@ -40,7 +46,7 @@ const About = forwardRef((props, ref) => {
             />
           </Box>
         </Box>
-        <Box
+        {/*<Box
           className="experience"
           boxShadow="dark-lg"
           as={motion.div}
@@ -71,6 +77,7 @@ const About = forwardRef((props, ref) => {
             ></Image>
           </Box>
         </Box>
+            */}
         <Box
           className="projects"
           boxShadow="dark-lg"
