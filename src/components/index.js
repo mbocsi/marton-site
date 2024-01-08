@@ -1,11 +1,11 @@
 import './index.css';
 import { Text, Heading, Box, Container } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+// import { motion } from 'framer-motion';
+// import { useState } from 'react';
 
 function Home() {
-  const [x, setX] = useState(0);
-  const [y, setY] = useState(0);
+  // const [x, setX] = useState(0);
+  // const [y, setY] = useState(0);
 
   return (
       <>
