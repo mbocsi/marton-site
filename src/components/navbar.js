@@ -24,6 +24,7 @@ function Navbar({ experienceRef, aboutRef, contactRef }) {
       color="800"
       maxWidth="100%"
       boxShadow="lg"
+      zIndex="1"
     >
       <HStack spacing="24px">
         {/*

@@ -22,7 +22,7 @@ const Experience = forwardRef((props, ref) => {
       <Container minWidth="65%">
         <VStack spacing={4} divider={<StackDivider borderColor="500" />}>
           <Heading paddingBottom="5%">Experience</Heading>
-          <Text as="b">
+          <Text as="b" fontSize="lg">
             I am a computer engineering and CS undergrad at UW Madison's College
             of Engineering, dedicated to advancing my knowledge and skills in
             the dynamic field of technology.
@@ -63,7 +63,7 @@ const Experience = forwardRef((props, ref) => {
                     During the fall of 2023, I attended the Norwegian University
                     of Technology (NTNU) in Trondheim, where I had the
                     opportunity to engage with numerous impressive
-                    technology-focused student organizations, including Orbit.
+                    technology-focused student organizations.
                   </Text>
                   <Text>...</Text>
                 </Stack>
@@ -102,7 +102,7 @@ const Experience = forwardRef((props, ref) => {
                 <Stack spacing={3} marginTop={3}>
                   <Text>
                     With a little bit of experience under my belt, I decided to
-                    expand the scope of my career prospects and explored the
+                    expand the scope of my career prospects and explore the
                     vehicle manufacturing industry.
                   </Text>
                   <Text>...</Text>
@@ -178,8 +178,7 @@ const Experience = forwardRef((props, ref) => {
                 <Stack spacing={3} marginTop={3}>
                   <Text>
                     Badger Solar Racing (Badgerloop at the time) was the first
-                    step in my computer engineering journey at University of
-                    Wisconsin.
+                    step in my computer engineering journey at UW Madison.
                   </Text>
                   <Text>...</Text>
                 </Stack>

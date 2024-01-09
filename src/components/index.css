@@ -8,6 +8,10 @@
   /*font-size: calc(10px + 2vmin);*/
 }
 
+#tsparticles {
+  height: 100vh;
+  width: 100%;
+}
 .About {
   text-align: center;
   background-color:#1a365d;
