@@ -2,7 +2,6 @@ import {
   Container,
   Heading,
   Text,
-  Box,
   Icon,
   useClipboard,
   useToast,
