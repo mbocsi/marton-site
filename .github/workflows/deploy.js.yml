@@ -3,8 +3,6 @@ name: Deploy
 on:
     push:
         branches: [ "main" ]
-    pull_request:
-        branches: [ "main" ]
     workflow_dispatch:
 
 permissions:
@@ -38,7 +36,7 @@ jobs:
     deploy: 
         environment:
             name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
+            url: https://mbocsi.github.io/
 
         runs-on: ubuntu-latest
         needs: build
