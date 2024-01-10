@@ -24,6 +24,7 @@ function Navbar({ experienceRef, aboutRef, contactRef }) {
       color="800"
       maxWidth="100%"
       boxShadow="lg"
+      zIndex="1"
     >
       <HStack spacing="24px">
         {/*
@@ -39,70 +40,78 @@ function Navbar({ experienceRef, aboutRef, contactRef }) {
                 </Container>
     */}
         <Container className="navitem">
-          <Box
-            className="navbox"
-            borderRadius={0}
-            bg={false}
-            as={motion.div}
-            onClick={() =>
-              experienceRef.current.scrollIntoView({ behavior: "smooth" })
-            }
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1 }}
-          >
-            <Text>Experience</Text>
-          </Box>
+          <button>
+            <Box
+              className="navbox"
+              borderRadius={0}
+              bg={false}
+              as={motion.div}
+              onClick={() =>
+                experienceRef.current.scrollIntoView({ behavior: "smooth" })
+              }
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1 }}
+            >
+              <Text>Experience</Text>
+            </Box>
+          </button>
         </Container>
         <Container className="navitem">
-          <Box
-            className="navbox"
-            borderRadius={0}
-            bg={false}
-            onClick={() =>
-              aboutRef.current.scrollIntoView({ behavior: "smooth" })
-            }
-            as={motion.div}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1 }}
-          >
-            <Text>About me</Text>
-          </Box>
+          <button>
+            <Box
+              className="navbox"
+              borderRadius={0}
+              bg={false}
+              onClick={() =>
+                aboutRef.current.scrollIntoView({ behavior: "smooth" })
+              }
+              as={motion.div}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1 }}
+            >
+              <Text>About me</Text>
+            </Box>
+          </button>
         </Container>
         <Container className="navitem">
-          <Box
-            className="navbox"
-            borderRadius={0}
-            bg={false}
-            onClick={() =>
-              contactRef.current.scrollIntoView({ behavior: "smooth" })
-            }
-            as={motion.div}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 1 }}
-          >
-            <Text>Contact me</Text>
-          </Box>
+          <button>
+            <Box
+              className="navbox"
+              borderRadius={0}
+              bg={false}
+              onClick={() =>
+                contactRef.current.scrollIntoView({ behavior: "smooth" })
+              }
+              as={motion.div}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 1 }}
+            >
+              <Text>Contact me</Text>
+            </Box>
+          </button>
         </Container>
       </HStack>
       <HStack className="socials" spacing="24px">
-        <Box
-          onClick={() => {
-            onCopy();
-            toast({
-              title: "Email copied to clipboard!",
-              description: "",
-              status: "success",
-              duration: 5000,
-              isClosable: false,
-            });
-          }}
-          colorScheme="instagram"
-          as={motion.div}
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 1.1 }}
-        >
-          <Icon boxSize={8} as={EmailIcon}></Icon>
-        </Box>
+        <button>
+          <Box
+            onClick={() => {
+              onCopy();
+              toast({
+                title: "Email copied to clipboard!",
+                description: "",
+                status: "success",
+                duration: 5000,
+                isClosable: false,
+              });
+            }}
+            colorScheme="instagram"
+            as={motion.div}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 1.1 }}
+          >
+            <Icon boxSize={8} as={EmailIcon}></Icon>
+          </Box>
+        </button>
         <ChakraLink href="https://www.linkedin.com/in/marton-bocsi/">
           <Box
             className="social-link"

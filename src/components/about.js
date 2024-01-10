@@ -15,7 +15,10 @@ const About = forwardRef((props, ref) => {
         About me
       </Heading>
       <Text fontSize="xl" color="white">
-        Placeholder text describing me. The website is a work in progress!
+        Here's a little preview about myself!
+      </Text>
+      <Text as="i" fontSize="sm">
+        Will add more information soon
       </Text>
       <div className="Tiles">
         <Box
@@ -46,38 +49,6 @@ const About = forwardRef((props, ref) => {
             />
           </Box>
         </Box>
-        {/*<Box
-          className="experience"
-          boxShadow="dark-lg"
-          as={motion.div}
-          whileHover={{ scale: 1.2 }}
-          whileTap={{ scale: 1.1 }}
-          color="black"
-          bg="white"
-          borderRadius="lg"
-          p={3}
-        >
-          <Heading>Experience</Heading>
-          <Box className="Image-tiles">
-            <Image
-              src={
-                "https://orbitntnu.com/static/3198cf2e6c64ee08372b55a55dce686a/8507e/orbitimage.png"
-              }
-            ></Image>
-            <Image
-              src={"https://badgersolarracing.org/images/logo.png"}
-            ></Image>
-            <Image
-              src={"https://avatars.githubusercontent.com/u/698510?s=280&v=4"}
-            ></Image>
-            <Image
-              src={
-                "https://piercemfg.csod.com/client/piercemfg/clp/01/images/2cTagWh.jpg"
-              }
-            ></Image>
-          </Box>
-        </Box>
-            */}
         <Box
           className="projects"
           boxShadow="dark-lg"
