@@ -20,7 +20,7 @@ jobs:
     deploy: 
         environment:
             name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
+            url: mbocsi.github.io
 
         runs-on: ubuntu-latest
             # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
