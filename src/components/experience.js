@@ -36,6 +36,7 @@ const Experience = forwardRef((props, ref) => {
                   padding="5%"
                   aspectRatio="1/1"
                   display="flex"
+                  boxShadow="sm"
                   as={motion.div}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 1 }}
@@ -79,6 +80,7 @@ const Experience = forwardRef((props, ref) => {
                   padding="5%"
                   aspectRatio="1/1"
                   display="flex"
+                  boxShadow="sm"
                   as={motion.div}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 1 }}
@@ -119,6 +121,7 @@ const Experience = forwardRef((props, ref) => {
                   padding="5%"
                   aspectRatio="1/1"
                   display="flex"
+                  boxShadow="sm"
                   as={motion.div}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 1 }}
@@ -157,6 +160,7 @@ const Experience = forwardRef((props, ref) => {
                   padding="5%"
                   aspectRatio="1/1"
                   display="flex"
+                  boxShadow="sm"
                   as={motion.div}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 1 }}
@@ -194,6 +198,7 @@ const Experience = forwardRef((props, ref) => {
                   padding="5%"
                   aspectRatio="1/1"
                   display="flex"
+                  boxShadow="sm"
                   as={motion.div}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 1 }}

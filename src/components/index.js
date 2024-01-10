@@ -1,8 +1,24 @@
 import "./index.css";
-import { Heading, Container } from "@chakra-ui/react";
+import {
+  Heading,
+  Container,
+  Text,
+  shouldForwardProp,
+  chakra,
+} from "@chakra-ui/react";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useState, useEffect, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import { motion, isValidMotionProp } from "framer-motion";
+
+const ChakraBox = chakra(motion.div, {
+  /**
+   * Allow motion props and non-Chakra props to be forwarded.
+   */
+  shouldForwardProp: (prop) =>
+    isValidMotionProp(prop) || shouldForwardProp(prop),
+});
 
 function Home() {
   const [init, setInit] = useState(false);
@@ -47,7 +63,7 @@ function Home() {
             quantity: 4,
           },
           repulse: {
-            distance: 200,
+            distance: 100,
             duration: 0.4,
           },
         },
@@ -101,7 +117,6 @@ function Home() {
     particle = (
       <Particles
         id="tsparticles"
-        position="absolute"
         particlesLoaded={particlesLoaded}
         options={options}
       />
@@ -109,10 +124,11 @@ function Home() {
   } else {
     particle = <></>;
   }
+
   return (
     <>
       <Container
-        bg={false}
+        bg="400"
         textAlign="center"
         minHeight="100vh"
         justifyContent="center"
@@ -124,9 +140,32 @@ function Home() {
         padding={0}
       >
         {particle}
-        <Heading position="absolute" size="4xl">
-          Marton Bocsi
-        </Heading>
+        <Container position="absolute">
+          <Container
+            position="relative"
+            minHeight="100vh"
+            justifyContent="center"
+            alignItems="center"
+            display="flex"
+            flexDirection="column"
+          >
+            <Heading size="4xl">Marton Bocsi</Heading>
+            <ChakraBox
+              animate={{ y: [0, 20, 0, 20, 0, 0] }}
+              transition={{
+                duration: 2,
+                times: [0, 0.1, 0.2, 0.3, 0.5, 1],
+                repeat: Infinity,
+                repeatDelay: 1,
+              }}
+              position="absolute"
+              bottom={6}
+            >
+              <Text>Scroll Down!</Text>
+              <ChevronDownIcon boxSize={12} />
+            </ChakraBox>
+          </Container>
+        </Container>
       </Container>
     </>
   );
