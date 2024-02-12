@@ -161,7 +161,6 @@ function Home() {
               position="absolute"
               bottom={6}
             >
-              <Text>Scroll Down!</Text>
               <ChevronDownIcon boxSize={12} />
             </ChakraBox>
           </Container>

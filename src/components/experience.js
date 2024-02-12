@@ -146,7 +146,31 @@ const Experience = forwardRef((props, ref) => {
                     was my first real look at software development and IT in a
                     professional setting.
                   </Text>
-                  <Text>...</Text>
+                  <Text>
+                    After my first two semesters studying computer engineering,
+                    I had the pleasure of working with researchers and
+                    programmers alike. I learned many practical skills in web
+                    development, database management, and scripting through my
+                    time at SSEC.
+                  </Text>
+                  <Text>
+                    During this experience, I learned SQL and database
+                    management using Python SQLite. I used these skills to
+                    populate databases with satellite image data using cronjobs
+                    which were then queried and displayed by a website I
+                    designed. This was my first look into frontend web
+                    development using raw HTML, CSS, and Javascript hosted on a
+                    server using Apache.
+                  </Text>
+                  <Text>
+                    During my web dev research, I came across React and decided
+                    to use it for my next project. The website enabled
+                    scientists to submit a form containing geolocation data and
+                    download an image that was generated via POST request to a
+                    script on the server. For this utility to be viable and
+                    convenient for users, I incorporated external APIs for
+                    geolocation conversions.
+                  </Text>
                 </Stack>
               </Container>
             </GridItem>
@@ -184,7 +208,35 @@ const Experience = forwardRef((props, ref) => {
                     Badger Solar Racing (Badgerloop at the time) was the first
                     step in my computer engineering journey at UW Madison.
                   </Text>
-                  <Text>...</Text>
+                  <Text>
+                    I joined this student organization as a Freshman in
+                    university, which enabled me to learn from amazing mentors
+                    and explore my options in the diverse field of computer
+                    engineering. Eager to start my journey, I joined the
+                    low-voltage team which specialized in designing PCB for the
+                    MCU and other logic for the vehicle.
+                  </Text>
+                  <Text>
+                    With already some electrical engineering experience from
+                    high school, I designed various schematics for the vehicle
+                    using Altium Designer. I made circuits for main power bus
+                    filters, sensors, and voltage/current telemetry. This is
+                    also where I first used and learned how to effectively use
+                    Git using Github.
+                  </Text>
+                  <Text>
+                    Through my time at Badger Solar Racing, I had many
+                    fulfilling experiences that allowed me to broaden my scope
+                    of engineering. I got to learn about hardware design using
+                    professional tools while also getting involved with other
+                    teams, particularily the software teams.
+                  </Text>
+                  <Text>
+                    While learning hardware design was certainly a valuable and
+                    fun experience, I was ultimately drawn to the abstract
+                    complexity of software, thus beginning my software
+                    engineering journey.
+                  </Text>
                 </Stack>
               </Container>
             </GridItem>
@@ -221,7 +273,11 @@ const Experience = forwardRef((props, ref) => {
                 </Text>
                 <Text as="b">Madison, WI USA</Text>
                 <Stack spacing={3} marginTop={3}>
-                  <Text>...</Text>
+                  <Text>
+                    3rd year undergraduate majoring in Computer Engineering:
+                    Machine Learning and Data Science Option and Computer
+                    Science.
+                  </Text>
                 </Stack>
               </Container>
             </GridItem>
