@@ -2,7 +2,6 @@ import "./index.css";
 import {
   Heading,
   Container,
-  Text,
   shouldForwardProp,
   chakra,
 } from "@chakra-ui/react";
