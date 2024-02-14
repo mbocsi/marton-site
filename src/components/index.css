@@ -51,11 +51,6 @@
   align-content: center;
 }
 
-.Tile .hobby {
-  grid-row: 1;
-  grid-column: 1;
-}
-
 .Tile .experience {
   grid-row: 1;
   grid-column: 2;
@@ -72,7 +67,9 @@
 }
 
 .Image-tiles {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   grid-gap: 5%;
   grid-template-columns: 1fr 1fr;
   align-items: center;
