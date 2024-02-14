@@ -51,9 +51,6 @@
   align-content: center;
 }
 
-.Tile .hobby {
-}
-
 .Tile .experience {
   grid-row: 1;
   grid-column: 2;
