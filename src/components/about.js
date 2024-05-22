@@ -66,49 +66,9 @@ const About = forwardRef((props, ref) => {
             />
           </Box>
         </Box>
-        <Box
-          className="projects"
-          boxShadow="dark-lg"
-          as={motion.div}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 1.1 }}
-          color="black"
-          bg="white"
-          borderRadius="lg"
-          p={3}
-        >
-          <Heading>Projects</Heading>
-          <Box className="Image-tiles">
-            <Image
-              boxSize="100px"
-              objectFit="contain"
-              src={
-                "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
-              }
-            ></Image>
-            <Image
-              boxSize="100px"
-              objectFit="contain"
-              src={
-                "https://1000logos.net/wp-content/uploads/2020/08/Python-Logo.png"
-              }
-            ></Image>
-            <Image
-              boxSize="100px"
-              objectFit="contain"
-              src={
-                "https://nl.mathworks.com/hardware-support/stm32/_jcr_content/mainParsys/band_1064257838_copy/mainParsys/columns_copy/2e914123-2fa7-423e-9f11-f574cbf57caa/image_copy_copy_copy.adapt.full.medium.svg/1699891188505.svg"
-              }
-            ></Image>
-            <Image
-              boxSize="100px"
-              objectFit="contain"
-              src={
-                "https://img.freepik.com/premium-vector/blue-tube-vector-logo-template-illustration-design-vector-eps-10_822766-9547.jpg"
-              }
-            ></Image>
-          </Box>
-        </Box>
+      </div>
+      <div>
+        <Heading>Projects</Heading>
       </div>
       {/* <Heading>MBTI</Heading>
       <Container

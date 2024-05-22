@@ -1,4 +1,4 @@
-import "./index.css";
+import "./title.css";
 import {
   Heading,
   Container,
@@ -108,7 +108,7 @@ function Home() {
         },
       },
     }),
-    []
+    [],
   );
 
   let particle;

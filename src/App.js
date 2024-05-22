@@ -1,9 +1,6 @@
 import React from "react";
-import Home from "./components";
-import About from "./components/about";
-import Experience from "./components/experience";
-import Contact from "./components/contact";
 import Navbar from "./components/navbar";
+import Home from "./components/home";
 import { useRef } from "react";
 
 function App() {
@@ -17,12 +14,11 @@ function App() {
         aboutRef={aboutRef}
         contactRef={contactRef}
       ></Navbar>
-      <Home></Home>
-      <Experience ref={experienceRef}></Experience>
-
-      <About ref={aboutRef}></About>
-
-      <Contact ref={contactRef}></Contact>
+      <Home
+        experienceRef={experienceRef}
+        aboutRef={aboutRef}
+        contactRef={contactRef}
+      />
     </>
   );
 }
