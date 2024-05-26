@@ -43,9 +43,9 @@ const Projects = forwardRef((_, ref) => {
         >
           {projects.map((project) => (
             <Card
-              flexBasis={300}
-              minW="72"
-              maxWidth="30%"
+              flexBasis={"20rem"}
+              flexGrow={"1"}
+              minW="20rem"
               marginY={8}
               as={motion.div}
               whileHover={{ scale: 1.1 }}
@@ -55,7 +55,7 @@ const Projects = forwardRef((_, ref) => {
               <ChakraLink href={project.url}>
                 <CardHeader>
                   <Heading size="md">{project.name}</Heading>
-                  <p>
+                  <Text as="sub">
                     Last push at{" "}
                     {new Date(project.lastPush).toLocaleString("us-en", {
                       month: "2-digit",
@@ -64,7 +64,7 @@ const Projects = forwardRef((_, ref) => {
                       hour: "numeric",
                       minute: "numeric",
                     })}
-                  </p>
+                  </Text>
                 </CardHeader>
                 <CardFooter flex flexDir="column">
                   <p>{project.description}</p>

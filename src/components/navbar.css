@@ -5,6 +5,7 @@
   width: 100%;
   display: inline-flex;
   align-items: center;
+  justify-items: end;
 }
 
 .navitem {
@@ -24,7 +25,6 @@
 }
 
 .socials {
-  margin-right: 24px;
   margin-left: auto;
 }
 
@@ -33,3 +33,6 @@
   justify-content: center;
 }
 
+.w-full {
+  width: 100%;
+}

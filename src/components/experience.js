@@ -16,12 +16,18 @@ import { motion } from "framer-motion";
 import "./experience.css";
 import { forwardRef } from "react";
 
-const Experience = forwardRef((props, ref) => {
+const Experience = forwardRef((_, ref) => {
   return (
-    <Container className="Experience-page" maxW="100%" bg="50" ref={ref}>
+    <Container
+      boxShadow="lg"
+      className="Experience-page"
+      maxW="100%"
+      bg="50"
+      ref={ref}
+    >
       <Container minWidth="65%">
         <VStack spacing={4} divider={<StackDivider borderColor="500" />}>
-          <Heading paddingBottom="5%">My Experience</Heading>
+          <Heading paddingY="5%">My Experience</Heading>
           <Text as="b" fontSize="lg">
             I am a computer engineering and CS undergrad at UW Madison's College
             of Engineering, dedicated to advancing my knowledge and skills in
