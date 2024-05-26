@@ -4,7 +4,6 @@ import {
   CardHeader,
   Heading,
   Flex,
-  Box,
   Container,
   Text,
   Link as ChakraLink,
@@ -12,7 +11,7 @@ import {
 import { motion } from "framer-motion";
 import { forwardRef, useEffect, useState } from "react";
 
-const Projects = forwardRef((props, ref) => {
+const Projects = forwardRef((_, ref) => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     fetch("https://api.github.com/users/mbocsi/repos")
@@ -28,11 +27,10 @@ const Projects = forwardRef((props, ref) => {
               lastPush: project.pushed_at,
             };
           })
-          .sort((a, b) => a.lastPush < b.lastPush)
+          .sort((a, b) => a.lastPush < b.lastPush),
       )
       .then((result) => setProjects(result));
-  });
-  // const projects = data;
+  }, []);
   return (
     <Container maxWidth="100%" p="5%" ref={ref}>
       <Heading paddingY="8">Projects</Heading>
