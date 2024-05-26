@@ -1,34 +1,38 @@
 .navbar {
-    height: 6vh;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
+  height: 6vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-items: end;
 }
 
 .navitem {
-    height: 100%;
-    padding: 1%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    white-space: nowrap;
+  height: 100%;
+  padding: 1%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .navbox {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .socials {
-    margin-right: 24px;
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .social-link {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.w-full {
+  width: 100%;
 }

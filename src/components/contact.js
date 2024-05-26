@@ -21,7 +21,7 @@ const ChakraBox = chakra(motion.div, {
     isValidMotionProp(prop) || shouldForwardProp(prop),
 });
 
-const Contact = forwardRef((props, ref) => {
+const Contact = forwardRef((_, ref) => {
   const { onCopy } = useClipboard("mvbocsi@gmail.com");
   const toast = useToast();
   return (
