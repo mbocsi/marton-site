@@ -36,9 +36,7 @@ function Home() {
   const options = useMemo(
     () => ({
       fullScreen: false,
-      background: {
-        color: "#4299E1",
-      },
+      background: {},
       interactivity: {
         events: {
           onClick: {
@@ -69,13 +67,13 @@ function Home() {
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: "#FFA500",
         },
         links: {
-          color: "#ffffff",
+          color: "#00237F",
           distance: 150,
           enable: true,
-          opacity: 0.5,
+          opacity: 0.8,
           width: 1,
         },
         collisions: {
@@ -97,14 +95,14 @@ function Home() {
           value: 80,
         },
         opacity: {
-          value: 0.5,
+          value: 0.9,
         },
         shape: {
           type: "circle",
         },
         size: {
           random: true,
-          value: 5,
+          value: 3,
         },
       },
     }),
@@ -125,47 +123,47 @@ function Home() {
   }
 
   return (
-    <>
-      <Container
-        bg="400"
-        textAlign="center"
-        minHeight="100vh"
-        justifyContent="center"
-        alignItems="center"
-        display="flex"
-        flexDirection="column"
-        maxWidth="100%"
-        margin={0}
-        padding={0}
-      >
-        {particle}
-        <Container position="absolute">
-          <Container
-            position="relative"
-            minHeight="100vh"
-            justifyContent="center"
-            alignItems="center"
-            display="flex"
-            flexDirection="column"
+    <Container
+      // bg="400"
+      textAlign="center"
+      minHeight="100vh"
+      justifyContent="center"
+      alignItems="center"
+      display="flex"
+      flexDirection="column"
+      maxWidth="100%"
+      margin={0}
+      padding={0}
+    >
+      {particle}
+      <Container position="absolute">
+        <Container
+          position="relative"
+          minHeight="100vh"
+          justifyContent="center"
+          alignItems="center"
+          display="flex"
+          flexDirection="column"
+        >
+          <Heading size="4xl" zIndex={-1}>
+            Marton Bocsi
+          </Heading>
+          <ChakraBox
+            animate={{ y: [0, 20, 0, 20, 0, 0] }}
+            transition={{
+              duration: 2,
+              times: [0, 0.1, 0.2, 0.3, 0.5, 1],
+              repeat: Infinity,
+              repeatDelay: 1,
+            }}
+            position="absolute"
+            bottom={6}
           >
-            <Heading size="4xl">Marton Bocsi</Heading>
-            <ChakraBox
-              animate={{ y: [0, 20, 0, 20, 0, 0] }}
-              transition={{
-                duration: 2,
-                times: [0, 0.1, 0.2, 0.3, 0.5, 1],
-                repeat: Infinity,
-                repeatDelay: 1,
-              }}
-              position="absolute"
-              bottom={6}
-            >
-              <ChevronDownIcon boxSize={12} />
-            </ChakraBox>
-          </Container>
+            <ChevronDownIcon boxSize={12} />
+          </ChakraBox>
         </Container>
       </Container>
-    </>
+    </Container>
   );
 }
 

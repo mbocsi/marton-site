@@ -23,49 +23,53 @@ function Navbar({ experienceRef, aboutRef, contactRef, projectsRef }) {
   return (
     <BootNavbar
       data-bs-theme="light"
-      expand="lg"
+      expand="md"
       fixed="top"
       className="bg-body-tertiary"
     >
       <Container>
-        <BootNavbar.Brand href="/">Marton Bocsi</BootNavbar.Brand>
+        <BootNavbar.Brand>Marton Bocsi</BootNavbar.Brand>
         <BootNavbar.Toggle aria-controls="basic-navbar-nav" />
-        <BootNavbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link>
-              <Box
-                className="navbox"
-                borderRadius={0}
-                bg={false}
-                as={motion.div}
-                onClick={() =>
-                  experienceRef.current.scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              >
-                <Text margin="auto">Experience</Text>
-              </Box>
-            </Nav.Link>
-            <Nav.Link>
-              <Box
-                className="navbox"
-                borderRadius={0}
-                bg={false}
-                as={motion.div}
-                onClick={() =>
-                  projectsRef.current.scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
-              >
-                <Text margin="auto">Projects</Text>
-              </Box>
-            </Nav.Link>
+        <BootNavbar.Collapse id="basic-navbar-nav" className="bg-body-tertiary">
+          <Nav className="me-auto w-full">
+            <Nav.Item>
+              <Nav.Link>
+                <Box
+                  className="navbox"
+                  borderRadius={0}
+                  bg={false}
+                  as={motion.div}
+                  onClick={() =>
+                    experienceRef.current.scrollIntoView({
+                      behavior: "smooth",
+                    })
+                  }
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 1 }}
+                >
+                  <Text margin="auto">Experience</Text>
+                </Box>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link>
+                <Box
+                  className="navbox"
+                  borderRadius={0}
+                  bg={false}
+                  as={motion.div}
+                  onClick={() =>
+                    projectsRef.current.scrollIntoView({
+                      behavior: "smooth",
+                    })
+                  }
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 1 }}
+                >
+                  <Text margin="auto">Projects</Text>
+                </Box>
+              </Nav.Link>
+            </Nav.Item>
             {/* <Nav.Link> */}
             {/*   <Box */}
             {/*     className="navbox" */}
@@ -81,77 +85,89 @@ function Navbar({ experienceRef, aboutRef, contactRef, projectsRef }) {
             {/*     <Text margin="auto">About me</Text> */}
             {/*   </Box> */}
             {/* </Nav.Link> */}
-            <Nav.Link>
-              <Box
-                className="navbox"
-                borderRadius={0}
-                bg={false}
-                onClick={() =>
-                  contactRef.current.scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-                as={motion.div}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 1 }}
+            <Nav.Item>
+              <Nav.Link>
+                <Box
+                  className="navbox"
+                  borderRadius={0}
+                  bg={false}
+                  onClick={() =>
+                    contactRef.current.scrollIntoView({
+                      behavior: "smooth",
+                    })
+                  }
+                  as={motion.div}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 1 }}
+                >
+                  <Text margin="auto">Contact me</Text>
+                </Box>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item
+              style={{
+                marginLeft: "auto",
+              }}
+            >
+              {" "}
+              <HStack
+                className="socials"
+                style={{ height: "100%" }}
+                spacing="24px"
               >
-                <Text margin="auto">Contact me</Text>
-              </Box>
-            </Nav.Link>
+                <button>
+                  <Box
+                    onClick={() => {
+                      onCopy();
+                      toast({
+                        title: "Email copied to clipboard!",
+                        description: "",
+                        status: "success",
+                        duration: 5000,
+                        isClosable: false,
+                      });
+                    }}
+                    colorScheme="instagram"
+                    as={motion.div}
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 1.1 }}
+                  >
+                    <Icon boxSize={8} as={EmailIcon}></Icon>
+                  </Box>
+                </button>
+                <ChakraLink href="https://www.linkedin.com/in/marton-bocsi/">
+                  <Box
+                    className="social-link"
+                    as={motion.div}
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 1.1 }}
+                  >
+                    <Icon boxSize={8} as={FaLinkedin}></Icon>
+                  </Box>
+                </ChakraLink>
+                <ChakraLink href="https://www.instagram.com/martonbocsi/">
+                  <Box
+                    className="social-link"
+                    as={motion.div}
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 1.1 }}
+                  >
+                    <Icon boxSize={8} as={FaInstagram}></Icon>
+                  </Box>
+                </ChakraLink>
+                <ChakraLink href="https://github.com/mbocsi">
+                  <Box
+                    className="social-link"
+                    as={motion.div}
+                    whileHover={{ scale: 1.2 }}
+                    whileTap={{ scale: 1.1 }}
+                  >
+                    <Icon boxSize={8} as={FaGithub}></Icon>
+                  </Box>
+                </ChakraLink>
+              </HStack>
+            </Nav.Item>
           </Nav>
-
-          <HStack className="socials" spacing="24px">
-            <button>
-              <Box
-                onClick={() => {
-                  onCopy();
-                  toast({
-                    title: "Email copied to clipboard!",
-                    description: "",
-                    status: "success",
-                    duration: 5000,
-                    isClosable: false,
-                  });
-                }}
-                colorScheme="instagram"
-                as={motion.div}
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 1.1 }}
-              >
-                <Icon boxSize={8} as={EmailIcon}></Icon>
-              </Box>
-            </button>
-            <ChakraLink href="https://www.linkedin.com/in/marton-bocsi/">
-              <Box
-                className="social-link"
-                as={motion.div}
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 1.1 }}
-              >
-                <Icon boxSize={8} as={FaLinkedin}></Icon>
-              </Box>
-            </ChakraLink>
-            <ChakraLink href="https://www.instagram.com/martonbocsi/">
-              <Box
-                className="social-link"
-                as={motion.div}
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 1.1 }}
-              >
-                <Icon boxSize={8} as={FaInstagram}></Icon>
-              </Box>
-            </ChakraLink>
-            <ChakraLink href="https://github.com/mbocsi">
-              <Box
-                className="social-link"
-                as={motion.div}
-                whileHover={{ scale: 1.2 }}
-                whileTap={{ scale: 1.1 }}
-              >
-                <Icon boxSize={8} as={FaGithub}></Icon>
-              </Box>
-            </ChakraLink>
-          </HStack>
         </BootNavbar.Collapse>
       </Container>
     </BootNavbar>
