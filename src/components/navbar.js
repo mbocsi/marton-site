@@ -26,6 +26,7 @@ function Navbar({ experienceRef, contactRef, projectsRef }) {
       expand="md"
       fixed="top"
       className="bg-body-tertiary"
+      style={{ height: "auto" }}
     >
       <Container>
         <BootNavbar.Brand>Marton Bocsi</BootNavbar.Brand>
