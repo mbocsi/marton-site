@@ -1,7 +1,7 @@
-import { Container, Heading, Text, Box, Image } from "@chakra-ui/react";
+import { Container, Heading, Text } from "@chakra-ui/react";
 import { forwardRef } from "react";
 
-const About = forwardRef((props, ref) => {
+const About = forwardRef((_, ref) => {
   return (
     <Container
       color="white"

@@ -16,7 +16,7 @@ import { default as BootNavbar } from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function Navbar({ experienceRef, aboutRef, contactRef, projectsRef }) {
+function Navbar({ experienceRef, contactRef, projectsRef }) {
   const { onCopy } = useClipboard("mvbocsi@gmail.com");
   const toast = useToast();
 
