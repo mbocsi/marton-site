@@ -7,17 +7,20 @@ function App() {
   const experienceRef = useRef(null);
   const aboutRef = useRef(null);
   const contactRef = useRef(null);
+  const projectsRef = useRef(null);
   return (
     <>
       <Navbar
         experienceRef={experienceRef}
         aboutRef={aboutRef}
         contactRef={contactRef}
+        projectsRef={projectsRef}
       ></Navbar>
       <Home
         experienceRef={experienceRef}
         aboutRef={aboutRef}
         contactRef={contactRef}
+        projectsRef={projectsRef}
       />
     </>
   );

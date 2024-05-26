@@ -21,7 +21,7 @@ const Experience = forwardRef((props, ref) => {
     <Container className="Experience-page" maxW="100%" bg="50" ref={ref}>
       <Container minWidth="65%">
         <VStack spacing={4} divider={<StackDivider borderColor="500" />}>
-          <Heading paddingBottom="5%">Experience</Heading>
+          <Heading paddingBottom="5%">My Experience</Heading>
           <Text as="b" fontSize="lg">
             I am a computer engineering and CS undergrad at UW Madison's College
             of Engineering, dedicated to advancing my knowledge and skills in

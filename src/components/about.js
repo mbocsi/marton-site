@@ -1,5 +1,4 @@
 import { Container, Heading, Text, Box, Image } from "@chakra-ui/react";
-import { motion } from "framer-motion";
 import { forwardRef } from "react";
 
 const About = forwardRef((props, ref) => {
@@ -16,82 +15,6 @@ const About = forwardRef((props, ref) => {
       <Text fontSize="xl" color="white">
         Here's a little preview about myself!
       </Text>
-      <div className="Tiles">
-        <Box
-          className="hobby"
-          boxShadow="dark-lg"
-          as={motion.div}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 1.1 }}
-          color="black"
-          bg="white"
-          borderRadius="lg"
-          p={3}
-        >
-          <Heading className="Tile-header">Hobbies</Heading>
-          <Box className="Image-tiles">
-            <Image
-              boxSize="100px"
-              objectFit="contain"
-              src={
-                "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Soccer_ball.svg/2048px-Soccer_ball.svg.png"
-              }
-              alt={"soccer"}
-            />
-            <Image
-              boxSize="150px"
-              objectFit="contain"
-              src={
-                "https://m.media-amazon.com/images/M/MV5BNmNhM2NjMTgtNmIyZC00ZmVjLTk4YWItZmZjNGY2NThiNDhkXkEyXkFqcGdeQXVyODU4MDU1NjU@._V1_FMjpg_UX1000_.jpg"
-              }
-              borderRadius="lg"
-              alt={"valorant"}
-            />
-            <Image
-              boxSize="100px"
-              objectFit="contain"
-              src={
-                "https://hips.hearstapps.com/autoweek/assets/s3fs-public/f1-abu-dhabi-gp-2017-f1-logo.jpg"
-              }
-              alt={"f1"}
-            />
-
-            <Image
-              boxSize="100px"
-              objectFit="contain"
-              src={
-                "https://png.pngtree.com/png-vector/20220719/ourmid/pngtree-black-camera-photography-icon-logo-png-image_6007177.png"
-              }
-              alt={"photography"}
-            />
-          </Box>
-        </Box>
-      </div>
-      <div>
-        <Heading>Projects</Heading>
-      </div>
-      {/* <Heading>MBTI</Heading>
-      <Container
-        display="flex"
-        flexDir="row"
-        justifyContent={"center"}
-        gap={2}
-        bg="white"
-        borderRadius="lg"
-      >
-        <Heading fontSize={72} color="blue">
-          I
-        </Heading>
-        <Heading fontSize={72} color="orange">
-          N
-        </Heading>
-        <Heading fontSize={72} color="green">
-          T
-        </Heading>
-        <Heading fontSize={72} color="brown">
-          P
-        </Heading>
-      </Container> */}
     </Container>
   );
 });
