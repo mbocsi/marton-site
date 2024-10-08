@@ -16,11 +16,15 @@ import goApi from "../images/goapi.png";
 import "./projects.css";
 import javascriptApi from "../images/javascriptapi.png";
 import spotifyApp from "../images/spotifyApp.png";
+import springApi from "../images/springApi.png";
+import fileRouter from "../images/file_router.png";
+import demoFrontend from "../images/demoFrontend.png";
+
 const projects = [
   {
     title: "File-based Router",
     github_url: "https://github.com/mbocsi/file-based-router",
-    image: "",
+    image: fileRouter,
     description:
       "An HTTP server written in Golang using the standard net/http package. It accepts HTTP requests and serves responses from a root file system that contains, html, js, css, and cgi files.",
     languages: ["Golang"],
@@ -73,12 +77,12 @@ const technical_projects = [
       {
         title: "Java API",
         github_url: "https://github.com/mbocsi/java-api-demo",
-        image: "",
+        image: springApi,
       },
       {
         title: "Frontend Demo",
-        github_url: "https://github.com/mbocsi/java-api-demo",
-        image: "",
+        github_url: "https://github.com/mbocsi/api-demo-frontend",
+        image: demoFrontend,
       },
     ],
   },
@@ -141,7 +145,7 @@ const Projects = forwardRef((_, ref) => {
       </Container>
       <Heading paddingY="8">Technical Projects</Heading>
       <Container maxWidth="100%">
-        <Grid gap={12} templateColumns="repeat(2, 1fr)">
+        <Grid gap={12} templateColumns="repeat(1, 1fr)">
           {technical_projects.map((project, idx) => (
             <GridItem key={idx}>
               <Card minW="20rem" height="100%">
@@ -152,8 +156,8 @@ const Projects = forwardRef((_, ref) => {
                   <p>{project.description}</p>
                   <Image src={project.image} />
                   <Grid
-                    templateColumns="repeat(2, 1fr)"
-                    templateRows="repeat(2, 1fr)"
+                    templateColumns="repeat(4, 1fr)"
+                    templateRows="repeat(1, 1fr)"
                     gap={8}
                   >
                     {project.repos.map((repo, idx) => (
@@ -165,7 +169,11 @@ const Projects = forwardRef((_, ref) => {
                           p={4}
                         >
                           <Heading size="sm">{repo.title}</Heading>
-                          <Image src={repo.image} boxSize="sm" />
+                          {repo.image ? (
+                            <Image src={repo.image} objectFit="contain" />
+                          ) : (
+                            ""
+                          )}
                         </ChakraLink>
                       </Card>
                     ))}
