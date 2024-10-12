@@ -10,7 +10,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { forwardRef } from "react";
-import aiApp from "../images/darkmode.png";
+import careerBridgeAi from "../images/careerbridgeai.jpeg";
 import marketApp from "../images/item_page.png";
 import goApi from "../images/goapi.png";
 import "./projects.css";
@@ -22,6 +22,15 @@ import demoFrontend from "../images/demoFrontend.png";
 
 const projects = [
   {
+    title: "CareerBridge AI",
+    github_url: "https://github.com/JIHONGKING/Ideation-Frontend",
+    image: careerBridgeAi,
+    description:
+      "An AI-powered NextJS application that connects Korean job seekers with U.S. job opportunities. Utilizes AI for OCR, career recommendations, and translations.",
+    languages: ["Typescript", "Python"],
+    tech: ["React", "NextJS", "Flask", "Tailwind CSS", "Upstage API"],
+  },
+  {
     title: "File-based Router",
     github_url: "https://github.com/mbocsi/file-based-router",
     image: fileRouter,
@@ -29,15 +38,6 @@ const projects = [
       "An HTTP server written in Golang using the standard net/http package. It accepts HTTP requests and serves responses from a root file system that contains, html, js, css, and cgi files.",
     languages: ["Golang"],
     tech: ["net/http"],
-  },
-  {
-    title: "AI chat app",
-    github_url: "https://github.com/mbocsi/AI-Chat-App",
-    image: aiApp,
-    description:
-      "A simple Next.js application for hosting a website that interacts with the API for ChatGPT 3.5 turbo.",
-    languages: ["Typescript"],
-    tech: ["React", "Next.js", "Tailwind CSS", "OpenAI API"],
   },
   {
     title: "Steam Market Stats",
