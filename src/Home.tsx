@@ -57,7 +57,7 @@ function App() {
 				</Button>
 				<Button asChild variant="outline">
 					<Link
-						to="https://github.com/martonbocsi"
+						to="https://github.com/mbocsi"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
