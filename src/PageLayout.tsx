@@ -5,7 +5,7 @@ export function PageLayout() {
 	return (
 		<div className="max-w-4xl mx-auto">
 			<NavMenu />
-			<main className="py-4">
+			<main className="p-4">
 				<Outlet />
 			</main>
 		</div>

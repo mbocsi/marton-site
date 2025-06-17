@@ -17,7 +17,7 @@ export function About() {
 					<CardContent className="space-y-4">
 						<p className="text-base leading-relaxed text-muted-foreground">
 							Hi! I'm Marton—a backend systems engineer who values
-							performance, elegant infrastructure, building
+							performance, elegant infrastructure, and building
 							systems with minimal technical debt. I recently
 							graduated from the University of Wisconsin-Madison
 							with degrees in Computer Engineering and Computer
