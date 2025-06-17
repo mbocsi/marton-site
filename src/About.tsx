@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import { Card, CardContent, CardHeader } from "./components/ui/card";
 
 export function About() {
