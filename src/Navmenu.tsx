@@ -1,15 +1,11 @@
 import {
 	NavigationMenu,
-	NavigationMenuContent,
-	NavigationMenuIndicator,
 	NavigationMenuItem,
 	NavigationMenuLink,
 	NavigationMenuList,
-	NavigationMenuTrigger,
-	NavigationMenuViewport,
 } from "@/components/ui/navigation-menu";
-import { SiGithub, SiLinkerd } from "@icons-pack/react-simple-icons";
-import { Link, NavLink } from "react-router";
+import { SiGithub } from "@icons-pack/react-simple-icons";
+import { NavLink } from "react-router";
 import { Button } from "./components/ui/button";
 import { Linkedin } from "lucide-react";
 
@@ -41,15 +37,23 @@ export function NavMenu() {
 				</NavigationMenuList>
 			</NavigationMenu>
 			<div>
-				<Button variant="ghost" asChild>
-					<Link to="">
+				<Button variant="ghost" size="icon" asChild>
+					<a
+						href="https://github.com/mbocsi"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						<SiGithub />
-					</Link>
+					</a>
 				</Button>
-				<Button variant="ghost" asChild>
-					<Link to="">
-						<SiLinkerd />
-					</Link>
+				<Button variant="ghost" size="icon" asChild>
+					<a
+						href="https://www.linkedin.com/in/marton-bocsi/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Linkedin />
+					</a>
 				</Button>
 			</div>
 		</div>

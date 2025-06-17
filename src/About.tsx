@@ -4,9 +4,7 @@ import { Card, CardContent, CardHeader } from "./components/ui/card";
 export function About() {
 	return (
 		<div className="">
-			{/* <header>
-				<h1>About me!</h1>
-			</header> */}
+			<title>Marton Bocsi - About</title>
 			<section className="space-y-4">
 				<Card>
 					<CardHeader>
@@ -19,7 +17,15 @@ export function About() {
 							Hi! I'm Marton—a backend systems engineer who values
 							performance, elegant infrastructure, and building
 							systems with minimal technical debt. I recently
-							graduated from the University of Wisconsin-Madison
+							graduated from the{" "}
+							<a
+								href="https://www.wisc.edu/"
+								className="hover:opacity-80 transition text-primary"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								University of Wisconsin-Madison
+							</a>{" "}
 							with degrees in Computer Engineering and Computer
 							Science, along with a certificate in Physics.
 						</p>
@@ -32,82 +38,68 @@ export function About() {
 						</p>
 						<p className="text-base leading-relaxed text-muted-foreground">
 							My primary tools are{" "}
-							<span>
-								<Link
-									to="https://www.typescriptlang.org/"
-									className="text-primary"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									TypeScript
-								</Link>
-							</span>
+							<a
+								href="https://www.typescriptlang.org/"
+								className="hover:opacity-80 transition text-primary"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								TypeScript
+							</a>
 							,{" "}
-							<span>
-								<Link
-									to="https://go.dev/"
-									className="text-primary"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Go
-								</Link>
-							</span>
+							<a
+								href="https://go.dev/"
+								className="hover:opacity-80 transition text-primary"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Go
+							</a>
 							, and{" "}
-							<span>
-								<Link
-									to="https://www.python.org/"
-									className="text-primary"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Python
-								</Link>
-							</span>
+							<a
+								href="https://www.python.org/"
+								className="hover:opacity-80 transition text-primary"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Python
+							</a>
 							. I've shipped fullstack systems with{" "}
-							<span>
-								<Link
-									to="https://workers.cloudflare.com/"
-									className="text-primary"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Cloudflare Workers
-								</Link>
-							</span>
+							<a
+								href="https://workers.cloudflare.com/"
+								className="hover:opacity-80 transition text-primary"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Cloudflare Workers
+							</a>
 							,{" "}
-							<span>
-								<Link
-									to="https://www.cloudflare.com/developer-platform/products/r2/"
-									className="text-primary"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									R2
-								</Link>
-							</span>
+							<a
+								href="https://www.cloudflare.com/developer-platform/products/r2/"
+								className="hover:opacity-80 transition text-primary"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								R2
+							</a>
 							,{" "}
-							<span>
-								<Link
-									to="https://developers.cloudflare.com/d1/"
-									className="text-primary"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									D1
-								</Link>
-							</span>
-							,and{" "}
-							<span>
-								<Link
-									to="https://www.docker.com/"
-									className="text-primary"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Docker
-								</Link>
-							</span>
+							<a
+								href="https://developers.cloudflare.com/d1/"
+								className="hover:opacity-80 transition text-primary"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								D1
+							</a>
+							, and{" "}
+							<a
+								href="https://www.docker.com/"
+								className="hover:opacity-80 transition text-primary"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Docker
+							</a>
 							. I'm also comfortable working closer to the
 							wire—whether that means low level networking or
 							integrating with hardware like servers, Raspberry
@@ -125,9 +117,17 @@ export function About() {
 							When I'm not coding, you'll probably find me deep in
 							a side project (usually involving too many wires),
 							geeking out over Formula 1 strategy, or curating my
-							ever-evolving K-pop playlist. I also love to
-							travel—whether it's for a conference or a
-							spontaneous adventure halfway around the world.
+							ever-evolving K-pop playlist. I also love to travel:
+							Check out my{" "}
+							<a
+								href="https://www.instagram.com/martonbocsi/"
+								className="hover:opacity-80 transition text-primary"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Instagram
+							</a>{" "}
+							profile for photos from my travels.
 						</p>
 						<p className="text-base leading-relaxed text-muted-foreground">
 							- Marton

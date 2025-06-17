@@ -30,6 +30,8 @@ const projects = [
 			"D1",
 			"KV",
 			"Clerk",
+			"OpenAI API",
+			"Google AI API",
 		],
 		status: "Live",
 		date: "Spring 2025",
@@ -40,9 +42,9 @@ const projects = [
 		description:
 			"Senior design project: A hand-held induction magnetometer for detecting the magnetic field of volcanic rocks.",
 		tech: [
-			"TypeScript",
 			"Python",
 			"C",
+			"TypeScript",
 			"Publisher/Subscriber",
 			"React",
 			"WebSocket",
@@ -56,8 +58,8 @@ const projects = [
 		description:
 			"A web platform for event ticket distribution and store for complimentary event purchases (Merch, VIP, etc.).",
 		tech: [
-			"TypeScript",
 			"Go",
+			"TypeScript",
 			"React-router",
 			"Docker Compose",
 			"PostgreSQL",
@@ -112,6 +114,7 @@ const projects = [
 export function Projects() {
 	return (
 		<div className="space-y-6">
+			<title>Marton Bocsi - Projects</title>
 			<h1 className="text-3xl font-bold tracking-tight">Projects</h1>
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
 				{projects.map((project, idx) => (

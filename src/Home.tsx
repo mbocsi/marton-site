@@ -5,14 +5,14 @@ import { Button } from "./components/ui/button";
 function App() {
 	return (
 		<div className="space-y-8">
-			<header className="flex space-x-4 items-stretch">
-				<div className="w-16 bg-accent aspect-square"></div>
+			<header className="flex space-x-4 items-center">
+				<img src="IMG_1104.png" className="w-20 border" />
 				<div>
 					<h1 className="text-4xl font-bold tracking-tight">
 						Marton Bocsi
 					</h1>
 					<p className="text-lg text-accent-foreground">
-						Backend & Systems Engineer · Fullstack Developer
+						Backend Systems Engineer · Fullstack Developer
 					</p>
 				</div>
 			</header>
@@ -20,24 +20,37 @@ function App() {
 				<CardHeader className="text-xl font-semibold">
 					Hey, I'm Marton!
 				</CardHeader>
-				<CardContent className="text-base leading-relaxed">
-					I'm a fullstack software engineer and recent graduate from
-					the University of Wisconsin-Madison with a degree in
-					Computer Engineering. I'm passionate about backend systems,
-					distributed infrastructure, and building tools that scale.
+				<CardContent className="text-base leading-relaxed space-y-3">
+					<p>
+						I'm a backend systems engineer and recent graduate from
+						the University of Wisconsin-Madison with a degree in
+						Computer Engineering. I'm passionate about backend
+						systems, distributed infrastructure, and building tools
+						that scale.
+					</p>
+					<p>
+						Feel free to contact me about anything at{" "}
+						<a
+							href="mailto:mvbocsi@gmail.com"
+							className="text-primary underline underline-offset-4 hover:opacity-80 transition"
+						>
+							mvbocsi@gmail.com
+						</a>
+						!
+					</p>
 				</CardContent>
 			</Card>
 			<section className="space-y-3">
 				<p>
 					Recently launched{" "}
-					<Link
-						to="https://genimix.dev"
+					<a
+						href="https://genimix.dev"
 						className="underline underline-offset-4 hover:opacity-80 transition text-primary"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						Genimix
-					</Link>
+					</a>
 					—an AI image generation platform for developers. It bundles
 					model APIs and optimized image storage, powered by
 					Cloudflare Workers, R2, and Clerk.
