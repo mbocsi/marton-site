@@ -11,12 +11,13 @@ import { cn } from "./lib/utils";
 
 const projects = [
 	{
-		title: "Home IoT Sensor and Controls Platform",
+		title: "Home IoT Framework",
 		description:
 			"A distributed system for real-time sensor data and controls using an MCP server, message queues, and embedded devices.",
 		tech: ["Go", "C", "TCP", "ESP32", "Raspberry Pi", "Grafana"],
 		date: "Summer 2025",
 		status: "In Progress",
+		link: "https://github.com/mbocsi/gohab",
 	},
 	{
 		title: "Genimix",
